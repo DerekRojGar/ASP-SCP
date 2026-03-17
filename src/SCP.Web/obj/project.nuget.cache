@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "Wpqth9Wn78Y=",
-  "success": true,
+  "dgSpecHash": "GGgl5UzEOD0=",
+  "success": false,
   "projectFilePath": "C:\\Projects\\asp-scp\\src\\SCP.Web\\SCP.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kelly.ramirez\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
@@ -10,10 +10,6 @@
     "C:\\Users\\kelly.ramirez\\.nuget\\packages\\microsoft.bcl.cryptography\\9.0.4\\microsoft.bcl.cryptography.9.0.4.nupkg.sha512",
     "C:\\Users\\kelly.ramirez\\.nuget\\packages\\microsoft.data.sqlclient\\6.1.1\\microsoft.data.sqlclient.6.1.1.nupkg.sha512",
     "C:\\Users\\kelly.ramirez\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\6.0.2\\microsoft.data.sqlclient.sni.runtime.6.0.2.nupkg.sha512",
-    "C:\\Users\\kelly.ramirez\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.5\\microsoft.entityframeworkcore.10.0.5.nupkg.sha512",
-    "C:\\Users\\kelly.ramirez\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.5\\microsoft.entityframeworkcore.abstractions.10.0.5.nupkg.sha512",
-    "C:\\Users\\kelly.ramirez\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.5\\microsoft.entityframeworkcore.analyzers.10.0.5.nupkg.sha512",
-    "C:\\Users\\kelly.ramirez\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\10.0.5\\microsoft.entityframeworkcore.relational.10.0.5.nupkg.sha512",
     "C:\\Users\\kelly.ramirez\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\10.0.5\\microsoft.entityframeworkcore.sqlserver.10.0.5.nupkg.sha512",
     "C:\\Users\\kelly.ramirez\\.nuget\\packages\\microsoft.extensions.dependencymodel\\10.0.0\\microsoft.extensions.dependencymodel.10.0.0.nupkg.sha512",
     "C:\\Users\\kelly.ramirez\\.nuget\\packages\\microsoft.identity.client\\4.73.1\\microsoft.identity.client.4.73.1.nupkg.sha512",
@@ -25,6 +21,8 @@
     "C:\\Users\\kelly.ramirez\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.7.1\\microsoft.identitymodel.protocols.openidconnect.7.7.1.nupkg.sha512",
     "C:\\Users\\kelly.ramirez\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.7.1\\microsoft.identitymodel.tokens.7.7.1.nupkg.sha512",
     "C:\\Users\\kelly.ramirez\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\kelly.ramirez\\.nuget\\packages\\mysqlconnector\\2.4.0\\mysqlconnector.2.4.0.nupkg.sha512",
+    "C:\\Users\\kelly.ramirez\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\9.0.0\\pomelo.entityframeworkcore.mysql.9.0.0.nupkg.sha512",
     "C:\\Users\\kelly.ramirez\\.nuget\\packages\\serilog\\4.3.0\\serilog.4.3.0.nupkg.sha512",
     "C:\\Users\\kelly.ramirez\\.nuget\\packages\\serilog.aspnetcore\\10.0.0\\serilog.aspnetcore.10.0.0.nupkg.sha512",
     "C:\\Users\\kelly.ramirez\\.nuget\\packages\\serilog.extensions.hosting\\10.0.0\\serilog.extensions.hosting.10.0.0.nupkg.sha512",
@@ -41,5 +39,29 @@
     "C:\\Users\\kelly.ramirez\\.nuget\\packages\\system.security.cryptography.pkcs\\9.0.4\\system.security.cryptography.pkcs.9.0.4.nupkg.sha512",
     "C:\\Users\\kelly.ramirez\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.4\\system.security.cryptography.protecteddata.9.0.4.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "SCP.Infrastructure depends on Pomelo.EntityFrameworkCore.MySql (>= 8.0.9) but Pomelo.EntityFrameworkCore.MySql 8.0.9 was not found. Pomelo.EntityFrameworkCore.MySql 9.0.0 was resolved instead.",
+      "projectPath": "C:\\Projects\\asp-scp\\src\\SCP.Web\\SCP.Web.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Projects\\asp-scp\\src\\SCP.Web\\SCP.Web.csproj",
+      "libraryId": "Pomelo.EntityFrameworkCore.MySql",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1107",
+      "level": "Error",
+      "message": "Version conflict detected for Microsoft.EntityFrameworkCore.Relational. Install/reference Microsoft.EntityFrameworkCore.Relational 10.0.5 directly to project SCP.Web to resolve this issue. \r\n SCP.Web -> SCP.Infrastructure -> Microsoft.EntityFrameworkCore.SqlServer 10.0.5 -> Microsoft.EntityFrameworkCore.Relational (>= 10.0.5) \r\n SCP.Web -> SCP.Infrastructure -> Pomelo.EntityFrameworkCore.MySql 9.0.0 -> Microsoft.EntityFrameworkCore.Relational (>= 9.0.0 && <= 9.0.999).",
+      "projectPath": "C:\\Projects\\asp-scp\\src\\SCP.Web\\SCP.Web.csproj",
+      "filePath": "C:\\Projects\\asp-scp\\src\\SCP.Web\\SCP.Web.csproj",
+      "libraryId": "Microsoft.EntityFrameworkCore.Relational",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

@@ -1,7 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using SCP.Infrastructure.Persistence;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<SCPDbContext>(options =>
+{
+    var conn = builder.Configuration.GetConnectionString("DefaultConnection");
+    options.UseSqlServer(conn); // o UseMySql(conn, ServerVersion.AutoDetect(conn))
+});
 
 var app = builder.Build();
 
