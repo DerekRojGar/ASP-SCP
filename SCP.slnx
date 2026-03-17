@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SCP.Application/SCP.Application.csproj" />
+    <Project Path="src/SCP.Domain/SCP.Domain.csproj" />
+    <Project Path="src/SCP.Infrastructure/SCP.Infrastructure.csproj" />
+    <Project Path="src/SCP.Web/SCP.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SCP.Tests.Integration/SCP.Tests.Integration.csproj" />
+    <Project Path="tests/SCP.Tests.Unit/SCP.Tests.Unit.csproj" />
+  </Folder>
+</Solution>
